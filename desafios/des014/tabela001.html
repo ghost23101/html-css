@@ -11,13 +11,31 @@
             }
 
             table{
-                width: 300px;
+                width: 400px;
+                height: 300px;
                 border-collapse: collapse;
             }
 
-            td, th{
+            th{
                 border: 1px solid black;
-                padding: 30px;
+                padding: 20px;
+                background-color: #6b6a6a;
+                color: white;
+            }
+
+            th.exa-hum{
+                background-color: white;
+                color: black;
+            }
+
+            td{
+                border: 1px solid black;
+                padding: 10px;
+                
+            }
+
+            td.media{
+                text-align: center;
             }
         </style>
     </head>
@@ -30,14 +48,66 @@
                 <tr>
                     <th>Área</th>
                     <th>Disciplinas</th>
+                    <th colspan="2">Notas</th>
                     <th>Média</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th rowspan="4" class="exa-hum">Exatas</th>
+                    <td>Matemática</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td class="media">0.0</td>
                 </tr>
 
                 <tr>
-                    
+                    <td>Física</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td class="media">0.0</td>
                 </tr>
-                
-            </thead>
+
+                <tr>
+                    <td>Química</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td class="media">0.0</td>
+                </tr>
+
+                <tr>
+                    <td>Biologia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td class="media">0.0</td>
+                </tr>
+
+                <tr>
+                    <th colspan="4" style="padding: 10px; text-align: left;">Média de Exatas</th>
+                    <td class="media" style="background-color: #6b6a6a; color: white;">0.0</td>
+                </tr>
+
+                <tr>
+                    <th rowspan="2" class="exa-hum">Humanas</th>
+                    <td>História</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td class="media">0.0</td>
+                </tr>
+
+                <tr>
+                    <td>Geografia</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td class="media">0.0</td>
+                </tr>
+
+                <tr>
+                    <th colspan="4" style="padding: 10px; text-align: left;">Média de Humanas</th>
+                    <td class="media" style="background-color: #6b6a6a; color: white;">0.0</td>
+                </tr>
+            </tbody>
         </table>
     </body>
 </html>
