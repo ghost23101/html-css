@@ -5,10 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="estilos/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+        <link rel="stylesheet" href="estilos/media-query.css">
         <title>Media Query</title>
     </head>
 
-    <body>
+    <body onresize="mudouTamanho()">
         <header>
             <h1>Meu Site</h1>
 
@@ -36,6 +37,16 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eaque similique nesciunt saepe ut veniam temporibus eveniet perspiciatis vitae numquam doloribus in voluptatum, quam doloremque, architecto consequuntur atque dignissimos excepturi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, saepe iusto perspiciatis, maiores, corporis blanditiis distinctio sed error ab voluptas dolore totam alias architecto qui quidem laborum eum autem. Tenetur!</p>
             </article>      
         </main>
+
+        <script>
+            function mudouTamanho(){
+                if (window.innerWidth >= 768){
+                    itens.style.display = 'block'
+                } else {
+                    itens.style.display = 'none'
+                }
+            }
+        </script>
 
         <script>
             function clickMenu(){
